@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe "PoemService" do
   it "retrieves tone from given text" do
-    poems = PoemService.poems_by_author("Emily")
+    poems = PoemService.poems_author("Emily")
 
     expect(poems).to be_a(Array)
 

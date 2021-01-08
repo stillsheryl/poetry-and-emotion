@@ -3,9 +3,7 @@ class Poem
   def initialize(data)
     @title = data[:title]
     @author = data[:author]
-    @lines = data[:lines].join("'")
-    # require "pry"; binding.pry
-    # @tone = ToneService.tone_for_poem(@lines)
+    @lines = data[:lines].join("")
     @tone = ToneFacade.get_tone(@lines)
   end
 end

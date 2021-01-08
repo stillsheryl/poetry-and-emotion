@@ -11,7 +11,5 @@ class ToneService
     end
 
     tone = JSON.parse(response.body, symbolize_names: true)
-
-    # tone[:document_tone][:tones].first[:tone_name]
   end
 end

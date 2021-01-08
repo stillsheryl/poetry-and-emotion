@@ -10,8 +10,8 @@ class ToneService
       f.params["text"] = poem
     end
 
-    tones = JSON.parse(response.body, symbolize_names: true)
+    tone = JSON.parse(response.body, symbolize_names: true)
 
-    tones[:document_tone][:tones].first[:tone_name]
+    # tone[:document_tone][:tones].first[:tone_name]
   end
 end

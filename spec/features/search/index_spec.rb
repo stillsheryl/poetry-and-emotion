@@ -8,7 +8,7 @@ describe "As a user, when I visit '/'" do
       fill_in :author, with: "Emily"
 
       click_on "Get Poems"
-
+save_and_open_page
       expect(current_path).to eq(search_path)
 
       expect(page).to have_css('.poems', count: 10)

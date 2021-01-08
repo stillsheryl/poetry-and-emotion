@@ -13,6 +13,7 @@ describe "Poem" do
     expect(poem).to be_a(Poem)
     expect(poem.title).to be_a(String)
     expect(poem.author).to be_a(String)
-    expect(poem.lines).to be_an(Array)
+    expect(poem.lines).to be_an(String)
+    expect(poem.tone).to be_an(String)
   end
 end

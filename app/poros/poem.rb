@@ -1,8 +1,9 @@
 class Poem
-  attr_reader :title, :author, :lines
+  attr_reader :title, :author, :lines, :tone
   def initialize(data)
     @title = data[:title]
     @author = data[:author]
     @lines = data[:lines].join("'")
+    @tone = ToneService.tone_for_poem(@lines)
   end
 end

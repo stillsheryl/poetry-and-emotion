@@ -1,0 +1,9 @@
+<h1>Poems</h1>
+
+<div class="poems">
+  <% @poems.each do |poem| %>
+    <h3><%= poem.title %></h3>
+    <p><%= poem.author %></p>
+    <p><%= poem.lines %></p>
+  <% end %>
+</div>

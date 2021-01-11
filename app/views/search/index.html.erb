@@ -1,10 +1,10 @@
 <h1>Poems</h1>
 
-<div class="poems">
   <% @poems.each do |poem| %>
-    <h3><%= poem.title %></h3>
-    <p><%= poem.author %></p>
-    <p><%= poem.lines %></p>
-    <p><%= poem.tone %></p>
+  <div class="poems">
+    <h3 class="title"><%= poem.title %></h3>
+    <p class="author"><%= poem.author %></p>
+    <p class="poem"><%= poem.lines %></p>
+    <p class="tone"><%= poem.tone %></p>
+  </div>
   <% end %>
-</div>
